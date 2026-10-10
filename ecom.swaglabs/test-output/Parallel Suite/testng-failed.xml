@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="classes" name="Failed suite [Parallel Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="classes" name="Chrome Parallel Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testScripts.InventoryTest">
+        <methods>
+          <include name="verifyInventoryToCartCompleteFlow"/>
+          <include name="verifyInventoryToCart"/>
+          <include name="afterMethod"/>
+          <include name="dbConnection"/>
+          <include name="beforeMethod"/>
+          <include name="at"/>
+          <include name="closeConnection"/>
+          <include name="verifyMultipleProductsAddedToCart"/>
+          <include name="verifyNameZToAFilter"/>
+          <include name="bt"/>
+        </methods>
+      </class> <!-- testScripts.InventoryTest -->
+      <class name="testScripts.CartTest">
+        <methods>
+          <include name="dbConnection"/>
+          <include name="afterMethod"/>
+          <include name="verifyUnselectedProductNotInCart"/>
+          <include name="at"/>
+          <include name="beforeMethod"/>
+          <include name="verifyRemoveSingleProductFromMultipleProducts"/>
+          <include name="closeConnection"/>
+          <include name="bt"/>
+        </methods>
+      </class> <!-- testScripts.CartTest -->
+      <class name="testScripts.CheckoutCompleteTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="dbConnection"/>
+          <include name="verifyOrderConfirmation"/>
+          <include name="at"/>
+          <include name="beforeMethod"/>
+          <include name="closeConnection"/>
+          <include name="bt"/>
+        </methods>
+      </class> <!-- testScripts.CheckoutCompleteTest -->
+    </classes>
+  </test> <!-- Chrome Parallel Tests(failed) -->
+</suite> <!-- Failed suite [Parallel Suite] -->
