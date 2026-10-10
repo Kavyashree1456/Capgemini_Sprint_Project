@@ -46,12 +46,10 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.18.46</version>
-
 		</dependency>
-
 	</dependencies>
-	
-<profiles>
+
+	<profiles>
 		<profile>
 			<id>Batch</id>
 			<build>
@@ -59,9 +57,10 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.5.5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>batch.xml</suiteXmlFile>
+								<suiteXmlFile>Batch.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -76,9 +75,10 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.5.5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>crossbrowser.xml</suiteXmlFile>
+								<suiteXmlFile>Crossbrowser.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -93,9 +93,10 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.5.5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>functional.xml</suiteXmlFile>
+								<suiteXmlFile>Functional.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -110,9 +111,10 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.5.5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>integration.xml</suiteXmlFile>
+								<suiteXmlFile>Integration.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -120,16 +122,17 @@
 			</build>
 		</profile>
 
-<profile>
+		<profile>
 			<id>System</id>
 			<build>
 				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.5.5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>system.xml</suiteXmlFile>
+								<suiteXmlFile>System.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -137,16 +140,17 @@
 			</build>
 		</profile>
 
-<profile>
+		<profile>
 			<id>Smoke</id>
 			<build>
 				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.5.5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>smoke.xml</suiteXmlFile>
+								<suiteXmlFile>Smoke.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -154,32 +158,34 @@
 			</build>
 		</profile>
 
-<profile>
+		<profile>
 			<id>Negative</id>
 			<build>
 				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.5.5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>negative.xml</suiteXmlFile>
+								<suiteXmlFile>Negative.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
 				</plugins>
 			</build>
 		</profile>
-<profile>
+		<profile>
 			<id>Parallel</id>
 			<build>
 				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.5.5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>parallel.xml</suiteXmlFile>
+								<suiteXmlFile>Parallel.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
